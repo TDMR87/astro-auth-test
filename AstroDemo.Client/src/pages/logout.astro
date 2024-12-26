@@ -1,0 +1,35 @@
+---
+export const prerender = false; // Ensure server-side rendering (SSR)
+
+const apiAccessToken = Astro.locals.apiAccessToken;
+
+// Clear the `apiAccessToken` cookie
+const pastDate = new Date(Date.now() - 1000).toUTCString();
+Astro.response.headers.set(
+    'Set-Cookie',
+    `apiAccessToken=expired; Path=/; HttpOnly; SameSite=Lax; Max-Age=1; Expires=${pastDate}`
+);
+---
+
+<html>
+  <body>
+    <h1>Logged out</h1>
+    <p>Redirecting to home in <span id="countdown">3</span> seconds...</p>
+    <a href="/">Go home</a>
+
+    <script>
+      const countdownElement = document.getElementById('countdown');
+      var countdown = 3;
+
+      const interval = setInterval(() => {
+        countdown -= 1;
+        countdownElement!.textContent = countdown.toString();
+
+        if (countdown <= 0) {
+          clearInterval(interval);
+          window.location.href = '/';
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+---
+export const prerender = false; // Ensure dynamic rendering (SSR) to be able to read query params
+
+const code = Astro.url.searchParams.get('code');
+
+const apiResponse = await fetch(`http://localhost:8080/signin`, {
+    method: 'GET',
+    credentials: 'include',
+});
+
+const apiAccessToken = await apiResponse.json();
+Astro.response.headers.set('Set-Cookie', `apiAccessToken=${apiAccessToken}; Path=/; HttpOnly; SameSite=Lax; Max-Age=3600`);
+---
+
+<html>
+  <body>
+    <h1>Login success</h1>
+    <p>Redirecting to home in <span id="countdown">3</span> seconds...</p>
+    <a href="/">Go home</a>
+
+    <script>
+      const countdownElement = document.getElementById('countdown');
+      var countdown = 3;
+
+      const interval = setInterval(() => {
+        countdown -= 1;
+        countdownElement!.textContent = countdown.toString();
+
+        if (countdown <= 0) {
+          clearInterval(interval);
+          window.location.href = '/';
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

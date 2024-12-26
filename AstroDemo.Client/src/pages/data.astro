@@ -1,0 +1,27 @@
+---
+export const prerender = false; // Ensure dynamic rendering (SSR) to be able to read query params
+
+const apiAccessToken = Astro.locals.apiAccessToken;
+
+const apiResponse = await fetch(`http://localhost:8080/data`, {
+    method: 'GET',
+    headers: { 'Authorization': 'Bearer ' + apiAccessToken }
+});
+
+var data = null;
+
+if (apiResponse.ok) {
+    data = await apiResponse.json();
+} else if (apiResponse.status === 401) {
+    data = apiResponse.status + " unauthorized";
+} else {
+    data = apiResponse.status + " error";
+}
+---
+
+<html>
+  <body>
+    <h3>{data}</h3>
+    <a href="/">Go back</a>
+  </body>
+</html>

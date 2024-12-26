@@ -1,0 +1,32 @@
+---
+export const prerender = false; // Ensure server-side rendering (SSR)
+const isLoggedIn = !!Astro.locals.apiAccessToken;
+---
+
+<html>
+  <body>
+    {isLoggedIn ? (
+        <a type="button" href="/logout">Logout</a>
+    ) : (
+		<a type="button" href="http://localhost:8080/login">Login</a>
+    )}
+	<a type="button" href="/data">Get data</a>
+  </body>
+</html>
+
+<style>
+  a[type="button"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  a[type="button"]:hover {
+    background-color: #0056b3;
+  }
+</style>

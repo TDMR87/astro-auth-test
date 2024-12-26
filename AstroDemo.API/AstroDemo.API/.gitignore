@@ -1,0 +1,68 @@
+# Visual Studio
+.vs/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+
+# Auto-generated files
+*.sln.docstates
+*.sln.ide
+*.sln.cache
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.log
+*.cache
+
+# Packages
+*.nupkg
+*.snupkg
+*.nuspec
+.packages/
+
+# Project lock files
+project.lock.json
+project.fragment.lock.json
+project.nuget.cache
+
+# Generated files
+*.g.i.cs
+*.g.cs
+*.i.cs
+*.csproj.FileListAbsolute.txt
+*.Publish.xml
+
+# Temporary files
+*.tmp
+*.temp
+*.dbmdl
+*.bak
+*.old
+*.orig
+*.pidb
+
+# Tooling files
+*.resharper
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Rider
+.idea/
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+desktop.ini
+
+# JetBrains Rider settings
+.idea/
+
+# Others
+*.tlog
+*.lastcodeanalysissucceeded

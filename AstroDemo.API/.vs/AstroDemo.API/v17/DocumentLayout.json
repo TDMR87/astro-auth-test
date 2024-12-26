@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git\\Astro\\AstroDemo\\AstroDemo.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FDA8A26-3094-4476-8D62-F4E4615F97C5}|AstroDemo.API\\AstroDemo.API.csproj|c:\\git\\astro\\astrodemo\\astrodemo.api\\astrodemo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FDA8A26-3094-4476-8D62-F4E4615F97C5}|AstroDemo.API\\AstroDemo.API.csproj|solutionrelative:astrodemo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FDA8A26-3094-4476-8D62-F4E4615F97C5}|AstroDemo.API\\AstroDemo.API.csproj|c:\\git\\astro\\astrodemo\\astrodemo.api\\astrodemo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FDA8A26-3094-4476-8D62-F4E4615F97C5}|AstroDemo.API\\AstroDemo.API.csproj|solutionrelative:astrodemo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Git\\Astro\\AstroDemo\\AstroDemo.API\\AstroDemo.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AstroDemo.API\\appsettings.json",
+              "ToolTip": "C:\\Git\\Astro\\AstroDemo\\AstroDemo.API\\AstroDemo.API\\appsettings.json",
+              "RelativeToolTip": "AstroDemo.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T09:07:26.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\Astro\\AstroDemo\\AstroDemo.API\\AstroDemo.API\\Program.cs",
+              "RelativeDocumentMoniker": "AstroDemo.API\\Program.cs",
+              "ToolTip": "C:\\Git\\Astro\\AstroDemo\\AstroDemo.API\\AstroDemo.API\\Program.cs",
+              "RelativeToolTip": "AstroDemo.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:00:38.767Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 114,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
